@@ -17,3 +17,28 @@ export default defineConfig({
     allowedHosts: 'all'
   }
 })
+// import { defineConfig } from "vite";
+// import react from "@vitejs/plugin-react";
+
+// export default defineConfig({
+//   plugins: [react()],
+//   resolve: {
+//     alias: {
+//       "@": "/src",
+//     },
+//   },
+//   optimizeDeps: {
+//     include: [
+//       "ethers",
+//       "pinata-sdk",
+//       "firebase/app",
+//       "firebase/auth",
+//       "firebase/database",
+//     ],
+//   },
+//   esbuild: {
+//     logOverride: {
+//       "missing-specifier": "silent",
+//     },
+//   },
+// });

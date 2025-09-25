@@ -127,7 +127,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 text-muted-foreground mb-4 md:mb-0">
-            <span>© 2024 PortTrack. Made with</span>
+            <span>© 2025 PortTrack. Made with</span>
             <Heart className="h-4 w-4 text-red-500 animate-pulse" />
             <span>for students worldwide.</span>
           </div>

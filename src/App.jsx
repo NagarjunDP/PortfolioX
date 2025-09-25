@@ -12,6 +12,10 @@ import WallOfFame from './pages/WallOfFame';
 import Hackathons from './pages/Hackathons';
 import Portfolio from './pages/Portfolio';
 import BlockchainVerification from './pages/BlockchainVerification';
+import Journey from './pages/Journey';
+import DetailsCollector from './pages/DetailsCollector'; // ✅ import
+import Dashboard from './pages/dashboard';
+import NewProjectForm from './pages/NewProject';
 import './App.css';
 
 function App() {
@@ -40,13 +44,19 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/auth" element={<Auth />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/portfolio/new" element={<NewProjectForm />} />
               <Route path="/student-dashboard" element={<StudentDashboard />} />
+              <Route path="/journey" element={<Journey />} />
               <Route path="/recruiter-dashboard" element={<RecruiterDashboard />} />
               <Route path="/feed" element={<Feed />} />
               <Route path="/wall-of-fame" element={<WallOfFame />} />
               <Route path="/hackathons" element={<Hackathons />} />
               <Route path="/portfolio/:id" element={<Portfolio />} />
               <Route path="/blockchain-verification" element={<BlockchainVerification />} />
+
+              
+              <Route path="/details" element={<DetailsCollector />} />
             </Routes>
           </AnimatePresence>
           
@@ -58,4 +68,3 @@ function App() {
 }
 
 export default App;
-
